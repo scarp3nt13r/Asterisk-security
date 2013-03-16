@@ -3,3 +3,23 @@ On the phone:
 [SIP] SRTP Method: s-descriptor
 [PHONE] Secure Call Serv: Yes
 [USER] Secure Call Serv: Yes
+
+On Asterisk:
+-------------
+mkdir /etc/asterisk/keys
+
+In asterisk source, generate Server certificat:
+contrib/scripts/ast_tls_cert -C legacy.mycompany.com -O "My Super Company" -d /etc/asterisk/keys -o legacy
+
+In asterisk source, generate Client certificat:
+./ast_tls_cert -m client -c /etc/asterisk/keys/ca.crt -k /etc/asterisk/keys/ca.key -C 708105B3998C -O "My Super Company" -d /etc/asterisk/keys -o 708105B3998C
+
+
+In sip.conf
+
+tlsenable=yes
+tlsbindaddr=0.0.0.0
+tlscertfile=/etc/asterisk/keys/legacy.pem
+tlscafile=/etc/asterisk/keys/ca.crt
+tlscipher=ALL
+tlsclientmethod=tlsv1
