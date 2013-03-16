@@ -12,11 +12,17 @@ apt-get install -y libneon27 libneon27-dev libneon27-dbg libical-dev libopenais-
 apt-get install -y libpopt-dev liblua5.1-0-dev libkqueue-dev libspandsp-dev ghostscript libtiff-tools sharutils
 
 ##LIBSRTP http://sourceforge.net/projects/srtp/files/srtp/
+##GitHub : https://github.com/dswarbrick/libsrtp/archive/master.zip
+## Note : If a prblem wih shared library when you comiling Asterisk add -fPIC in Makefile:
+## CFLAGS  = -fPIC -Wall -O4 -fexpensive-optimizations -funroll-loops
+## make && make runtest && make install
+
 cd /usr/src
 wget http://sourceforge.net/projects/srtp/files/srtp/1.4.4/libsrtp-1.4.4.pdf/download
 mv download srtp-1.4.4.tgz
 tar -xzf srtp-1.4.4.tgz
 cd srtp
+
 ./configure --prefix=/usr
 make 
 make runtest
