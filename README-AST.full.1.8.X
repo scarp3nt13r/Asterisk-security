@@ -1,3 +1,5 @@
+##LIBSRTP http://sourceforge.net/projects/srtp/files/srtp/
+
 apt-get install -y linux-headers-`uname -r` bison openssl libssl-dev libeditline0 libeditline-dev libedit-dev
 apt-get install -y gcc make g++ php5-cli mysql-common libmysqlclient15-dev libnewt-dev
 apt-get install -y vim sox nmap ngrep iftop iptraf elinks lynx
@@ -10,3 +12,6 @@ apt-get install -y libsqlite0 libsqlite0-dev libsqlite3-0 libsqlite3-dev libdbd-
 apt-get install -y odbc-postgresql postgresql-client-8.4 libpq-dev libjack-jackd2-0 libjack-jackd2-dev
 apt-get install -y libneon27 libneon27-dev libneon27-dbg libical-dev libopenais-dev libsnmp-dev 
 apt-get install -y libpopt-dev liblua5.1-0-dev libkqueue-dev libspandsp-dev ghostscript libtiff-tools sharutils
+apt-get install -y srtp-docs libsrtp1-dev srtp-utils
+
+
