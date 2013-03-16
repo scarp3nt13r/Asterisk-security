@@ -9,7 +9,7 @@ apt-get install -y libsrtp0 libsrtp0-dev radiusclient1 libradius1-dev
 apt-get install -y libsqlite0 libsqlite0-dev libsqlite3-0 libsqlite3-dev libdbd-pgsql freetds-dev libcurl3-dev 
 apt-get install -y odbc-postgresql postgresql-client-8.4 libpq-dev libjack-jackd2-0 libjack-jackd2-dev
 apt-get install -y libneon27 libneon27-dev libneon27-dbg libical-dev libopenais-dev libsnmp-dev 
-apt-get install -y libpopt-dev liblua5.1-0-dev libkqueue-dev libspandsp-dev ghostscript libtiff-tools sharutils
+apt-get install -y libreadline-dev libpopt-dev liblua5.1-0-dev libspandsp-dev ghostscript libtiff-tools sharutils libkqueue-dev 
 
 ##LIBSRTP http://sourceforge.net/projects/srtp/files/srtp/
 ##GitHub : https://github.com/dswarbrick/libsrtp/archive/master.zip
