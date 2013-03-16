@@ -13,7 +13,7 @@ apt-get install -y libpopt-dev liblua5.1-0-dev libkqueue-dev libspandsp-dev ghos
 
 ##LIBSRTP http://sourceforge.net/projects/srtp/files/srtp/
 ##GitHub : https://github.com/dswarbrick/libsrtp/archive/master.zip
-## Note : If a prblem wih shared library when you comiling Asterisk add -fPIC in Makefile:
+## Note : If you have a prblem whith shared library when you comiling Asterisk add -fPIC in Makefile:
 ## CFLAGS  = -fPIC -Wall -O4 -fexpensive-optimizations -funroll-loops
 ## make && make runtest && make install
 
