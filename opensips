@@ -1,0 +1,12 @@
+apt-get install -y bison bisonc++ flex libsctp1 libxml2-dev libexpat1-dev libradiusclient-ng-dev libradiusclient-ng2 
+apt-get install -y libcurl4-openssl-dev libxmlrpc-c3-dev libsnmp-dev libconfuse0 libconfuse-dev 
+apt-get install -y build-essential libmysqlclient-dev
+
+#http://opensips.org/pub/opensips/
+
+
+make all include_modules="db_mysql" modules
+
+
+
+
